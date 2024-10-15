@@ -4,4 +4,4 @@
 
 ## Live Site Url
 
-### https://www.naveenprasad07.github.io/newshomepage-10
+### https://naveenprasad07.github.io/newshomepage-10
