@@ -1,0 +1,205 @@
+:root {
+  --orange: hsl(35, 77%, 62%);
+  --red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --gray-blue: hsl(233, 8%, 79%);
+  --dark-gray-blue: hsl(236, 13%, 42%);
+  --dark-blue: hsl(240, 100%, 5%);
+}
+
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "inter";
+}
+
+img {
+  display: block;
+}
+
+.container {
+  margin: 4.8rem auto;
+  width: 130rem;
+}
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+.cover-page img {
+  min-width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+ul {
+  display: flex;
+  gap: 6.4rem;
+}
+
+li {
+  font-size: 1.8rem;
+}
+
+/* <div class="latest">
+            <h2>New</h2>
+            <div class="latest-topic">
+              <h3>Hydrongen VS Electric Cars</h3>
+              <p>Cars Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>*/
+.latest {
+  background-color: var(--dark-blue);
+  padding: 2rem 1.8rem;
+  grid-column: 2 / span 2;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  gap: 2.4rem;
+  row-gap: 2.4rem;
+}
+
+.latest h2 {
+  font-size: 4.8rem;
+  color: var(--orange);
+  margin-bottom: 2.4rem;
+}
+
+.latest-topic {
+  margin-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  border-bottom: 1px solid white;
+}
+
+.latest-topic:last-child {
+  border-bottom: none;
+}
+
+.latest-topic h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.latest-topic p {
+  color: var(--gray-blue);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.cover-description {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.cover-about {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.cover-about p {
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.cover-about a {
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+  font-weight: 600;
+  background-color: var(--red);
+  padding: 1.8rem 3.2rem;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cover-description h1 {
+  font-size: 5.2rem;
+  font-weight: 800;
+  width: 100%;
+}
+
+.cover-description p {
+  font-size: 1.6rem;
+  color: var(--dark-gray-blue);
+}
+
+.tops {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.top {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.top-3 {
+  grid-row: 3;
+  grid-column: 1 / span 3;
+}
+
+.top-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-side h3 {
+  font-size: 3.2rem;
+  color: var(--red);
+  margin-bottom: 1.8rem;
+}
+
+.top-side h4 {
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.img-box {
+  width: 15rem;
+}
+
+.top-side p {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 500) {
+  html {
+    font-size: 125%;
+  }
+  /* html {
+    font-size: 50%;
+  } */
+  /* .grid-2-cols {
+    grid-template-columns: 1fr;
+  } */
+
+  .latest {
+    grid-row: 2;
+    background-color: red;
+  }
+
+  .top-3 {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+  }
+}
